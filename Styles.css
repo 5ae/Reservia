@@ -1,0 +1,118 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.blocPage{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+    /* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+nav li a{
+    padding: 42px;
+}
+
+.navigation:hover{
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+}
+
+strong{
+    color: #0065fc;
+    margin-left: 42px;
+}
+
+/* MAIN */
+
+
+.intro{
+    padding-top: 40px;
+    line-height: 0.8em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search i{
+    color: black;
+    background-color: #F2F2F2;
+    padding: 15px 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+input{
+    padding: 15px;
+    border: 2px solid #F2F2F2;
+    outline: none;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+    font-size: 1.1em;
+}
+
+.search a{
+    background-color: #0065fc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+section p{
+    font-weight: bold;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+}
+
+.tag a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.TagElement{
+    color: #0065fc;
+    border-radius: 30px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.icone{
+    background-color: #deebff;
+    padding: 15px 15px;
+    border-radius: 30px;
+}
