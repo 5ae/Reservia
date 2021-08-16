@@ -13,7 +13,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    margin-top: 28px;
 }
 
 nav{
@@ -33,17 +33,18 @@ nav a{
 }
 
 nav li a{
-    padding: 42px;
+    padding: 41px;
 }
 
 .navigation:hover{
-    border-top: 2px solid #0065fc;
+    border-top: 4px solid #0065fc;
     color: #0065fc;
 }
 
-strong{
+.SignIn{
     color: #0065fc;
     margin-left: 42px;
+    font-weight: bold;
 }
 
 /* MAIN */
@@ -51,7 +52,10 @@ strong{
 
 .intro{
     padding-top: 40px;
-    line-height: 0.8em;
+}
+
+.intro p{
+    margin-top: -10px;
 }
 
 .search{
@@ -62,8 +66,8 @@ strong{
 .search i{
     color: black;
     background-color: #F2F2F2;
-    padding: 15px 15px;
-    border-radius: 10px 0 0 10px;
+    padding: 17px 18px;
+    border-radius: 15px 0 0 15px;
 }
 
 input{
@@ -87,32 +91,256 @@ input{
     border-radius: 0 10px 10px 0;
 }
 
-section p{
+.filtres{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filtres p{
     font-weight: bold;
 }
 
 .tag{
     display: flex;
-    align-items: center;
-}
-
-.tag a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
 }
 
 .TagElement{
-    color: #0065fc;
-    border-radius: 30px;
-    margin-left: 40px;
     display: flex;
     align-items: center;
+    margin-left: 40px;
+    border: 4px solid #F2F2F2;
+    border-radius: 30px 30px;
 }
 
-.icone{
-    background-color: #deebff;
-    padding: 15px 15px;
+.bckgrdIcone{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#0065fc;
+    background-color: #Deebff;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
+}
+
+.TagElement a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+}
+
+.TagElement:hover{
+    background-color: #Deebff;
+    cursor: pointer;
+}
+
+.TagElement a:hover{
+    color: #0065fc;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+    border: 3px solid #F2F2F2;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.hébergements{                                      /* Miniatures hébergements */ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.Marseille{                                         
+    width: 800px;
+    height: 600px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+.Marseille h3 a{
+    color: black;
+}
+
+.Marseille h2{
+    margin-bottom: 40px;
+}
+
+.image img{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; 
+}
+
+.image{
+    height: 105px;
+    width: 225px;
+}
+
+.miniature{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 225px;
+    height: 177px;
+    line-height: 5px;
+    box-shadow: 0px 0px 5px #cecece;
+}
+
+.description h3{ 
+    color: black;
+    padding-left: 10px;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+.description p{ 
+    color: black;
+    padding-left: 10px;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+.stars{
+    color: #0065FC;
+    padding-left: 10px;
+    font-size: small;
+}
+
+.grey{
+    color: #cecece;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenu a{
+    margin-bottom: 40px;
+}
+
+.contenu a:hover{
+    transform: scale(1.05);
+}
+
+.populaires{
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 380px;
+    height: 600px;
+}
+
+.titre{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.chart{
+    font-size: x-large;
+}
+
+.PopMiniature{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 370px;
+    height: 135px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 20px #cecece;
+}
+
+.PopImage{
+    height: 134px;
+    width: 115px;
+}
+
+.PopImage img{
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.PopDescription h3{
+    color: black;
+    padding-left: 10px;
+    font-family: 'Raleway';
+    font-size: 17px;
+    width: 160px;
+}
+
+.PopDescription p{
+    color: black;
+    padding-left: 10px;
+    font-family: 'Raleway';
+    font-size: 17px;
+}
+
+.PopStars{
+    color: #0065FC;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: small;
+}
+
+.best a:hover{
+    transform: scale(1.05);
+}
+
+.Activités h2{
+    margin-top: 60px;
+}
+
+.Aperçu img{
+    border-radius: 20px 20px 0 0;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.Aperçu{
+    width: 250px;
+    height: 390px;
+    box-shadow: 0px 0px 10px #cecece;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.Aperçu p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+.Aperçu a{
+    color: black;
+}
+
+.Aperçu:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
