@@ -311,22 +311,13 @@ a{
     transform: scale(1.05);
 }
 
-.Activités h2{
+.Activités h2{                              /* Activité */
     margin-top: 60px;
 }
 
-.Aperçu img{
-    border-radius: 20px 20px 0 0;
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-}
-
 .Aperçu{
-    width: 250px;
-    height: 390px;
-    box-shadow: 0px 0px 10px #cecece;
-    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Aperçu p{
@@ -336,11 +327,100 @@ a{
     padding: 10px;
 }
 
+.BlocMiniature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ApMiniature1 img{
+    border-radius: 20px 20px 0 0;
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.ApMiniature1{
+    width: 280px;
+    height: 390px;
+    box-shadow: 0px 0px 10px #cecece;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.ApMiniature2 img{
+    border-radius: 20px 20px 0 0;
+    width: 330px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ApMiniature2{
+    width: 330px;
+    height: 190px;
+    box-shadow: 0px 0px 10px #cecece;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.ApMiniature3 img{
+    border-radius: 20px 20px 0 0;
+    width: 330px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.ApMiniature3{
+    width: 330px;
+    height: 140px;
+    box-shadow: 0px 0px 10px #cecece;
+    border-radius: 20px 20px 10px 10px;
+}
+
+.ApMiniature4 img{
+    border-radius: 20px 20px 0 0;
+    width: 330px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.ApMiniature4{
+    width: 330px;
+    height: 170px;
+    box-shadow: 0px 0px 10px #cecece;
+    border-radius: 20px 20px 10px 10px;
+}
+
 .Aperçu a{
     color: black;
 }
 
-.Aperçu:hover{
+.Aperçu a:hover{
     transform: scale(1.05);
-    cursor: pointer;
+}
+
+footer{
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-left: -250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FootContenu{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+body{               /* Permet au footer de prendre la totalité de la largeur */
+    margin: 0;
 }
