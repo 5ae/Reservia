@@ -1,8 +1,9 @@
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0;              /* Permet au footer de prendre la totalité de la largeur */
 }
 
-.blocPage{
+.BlockPage{
     width: 100%;
     max-width: 1400px;
     margin: auto;
@@ -46,6 +47,45 @@ nav li a{
     margin-left: 42px;
     font-weight: bold;
 }
+
+@media all and (max-width: 1024px)
+{
+    .blocPage{
+        width:100%;
+        margin: auto;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav li a{
+        padding: 20px 60px;
+    }
+
+    nav li{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navigation{
+        border-bottom: 4px solid #F2F2F2;
+    }
+
+    .navigation:hover{
+        border-bottom: 4px solid #0065fc;
+        border-top: none;
+    }
+
+    .SignIn{
+        position: absolute;
+        right: 40px;
+        top: 45px;
+    }
+
+}
+
 
 /* MAIN */
 
@@ -91,13 +131,13 @@ input{
     border-radius: 0 10px 10px 0;
 }
 
-.filtres{
+.filters{
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
-.filtres p{
+.filters p{
     font-weight: bold;
 }
 
@@ -108,18 +148,19 @@ input{
 .TagElement{
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 45px;
     border: 4px solid #F2F2F2;
     border-radius: 30px 30px;
 }
 
-.bckgrdIcone{
+.BckgrdIcone{
     display:flex;
     align-items: center;
     justify-content: center;
     color:#0065fc;
     background-color: #Deebff;
     width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 30px;
 }
@@ -140,6 +181,19 @@ input{
     color: #0065fc;
 }
 
+@media all and (max-width: 1024px)
+{
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag{
+        flex-wrap: wrap;
+        margin-left: -45px;
+    }
+}
+
 .info{
     display: flex;
     align-items: center;
@@ -158,9 +212,40 @@ input{
     margin-right: 10px;
 }
 
-.hébergements{                                      /* Miniatures hébergements */ 
+.accomodation{                                      /* Miniatures hébergements */ 
     display: flex;
     justify-content: space-between;
+}
+
+@media all and (max-width: 1024px)
+{
+    .accomodation{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .popular{
+        background: #F2F2F2;
+        min-width: 100%;
+    }
+
+    .PopMiniature{
+        min-width: 100%;
+    }
+
+    .PopDescription h3{
+        max-width: 100%;
+    }
+    
+    .PopDescription p{
+        min-width: 100%;
+    }
+    
+    .PopStars{
+        min-width: 100%;
+    }
+
+
 }
 
 .Marseille{                                         
@@ -171,22 +256,8 @@ input{
     padding: 20px 40px;
 }
 
-.Marseille h3 a{
-    color: black;
-}
-
 .Marseille h2{
     margin-bottom: 40px;
-}
-
-.image img{
-    object-fit: cover;
-    border-radius: 15px 15px 0 0; 
-}
-
-.image{
-    height: 105px;
-    width: 225px;
 }
 
 .miniature{
@@ -199,6 +270,16 @@ input{
     height: 177px;
     line-height: 5px;
     box-shadow: 0px 0px 5px #cecece;
+}
+
+.image{
+    height: 105px;
+    width: 225px;
+}
+
+.image img{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; 
 }
 
 .description h3{ 
@@ -227,23 +308,24 @@ input{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
-.contenu{
+.content{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contenu a{
+.content a{
     margin-bottom: 40px;
 }
 
-.contenu a:hover{
+.content a:hover{
     transform: scale(1.05);
 }
 
-.populaires{
+.popular{
     background: #F2F2F2;
     border-radius: 20px;
     padding: 20px 40px;
@@ -251,7 +333,7 @@ a{
     height: 600px;
 }
 
-.titre{
+.title{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -311,103 +393,108 @@ a{
     transform: scale(1.05);
 }
 
-.Activités h2{                              /* Activité */
+.activities h2{                              /* Activité */
     margin-top: 60px;
 }
 
-.Aperçu{
+.preview{
     display: flex;
     justify-content: space-between;
 }
 
-.Aperçu p{
+.preview p{
     margin: 0;
     font-weight: bold;
     font-size: 0.9em;
     padding: 10px;
 }
 
-.BlocMiniature{
+.BlockMiniature{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.ApMiniature1 img{
+.PreMiniature1 img{
     border-radius: 20px 20px 0 0;
     width: 280px;
     height: 350px;
     object-fit: cover;
 }
 
-.ApMiniature1{
+.PreMiniature1{
     width: 280px;
     height: 390px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
 }
 
-.ApMiniature2 img{
+.PreMiniature2 img{
     border-radius: 20px 20px 0 0;
     width: 330px;
     height: 150px;
     object-fit: cover;
 }
 
-.ApMiniature2{
+.PreMiniature2{
     width: 330px;
     height: 190px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
 }
 
-.ApMiniature3 img{
+.PreMiniature3 img{
     border-radius: 20px 20px 0 0;
     width: 330px;
     height: 100px;
     object-fit: cover;
 }
 
-.ApMiniature3{
+.PreMiniature3{
     width: 330px;
     height: 140px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
 }
 
-.ApMiniature4 img{
+.PreMiniature4 img{
     border-radius: 20px 20px 0 0;
     width: 330px;
     height: 130px;
     object-fit: cover;
 }
 
-.ApMiniature4{
+.PreMiniature4{
     width: 330px;
     height: 170px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
 }
 
-.Aperçu a{
+.preview a{
     color: black;
 }
 
-.Aperçu a:hover{
+.preview a:hover{
     transform: scale(1.05);
+}
+
+@media all and (max-width: 375px)
+{
+    .preview{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 footer{
     background-color: #F2F2F2;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 40px;
-    margin-left: -250px;
-    display: flex;
-    justify-content: space-evenly;
+    margin-top: 60px;
 }
 
-.FootContenu{
+.FootContent{
     display: flex;
     flex-direction: column;
     line-height: 25px;
@@ -421,6 +508,10 @@ footer a:hover{
     text-decoration: underline;
 }
 
-body{               /* Permet au footer de prendre la totalité de la largeur */
-    margin: 0;
+.footer{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 20%;
 }
