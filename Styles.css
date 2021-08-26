@@ -100,6 +100,7 @@ input{
 
 .filters p{
     font-weight: bold;
+    margin-right: 10px;
 }
 
 .tag{
@@ -322,6 +323,7 @@ a{
 .preview{
     display: flex;
     justify-content: space-between;
+    gap: 2%;
 }
 
 .preview p{
@@ -335,10 +337,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 
 .PreMiniature1{
-    width: 280px;
+    width: 100%;
     height: 390px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
@@ -346,13 +349,13 @@ a{
 
 .PreMiniature1 img{
     border-radius: 20px 20px 0 0;
-    width: 280px;
+    width: 100%;
     height: 350px;
     object-fit: cover;
 }
 
 .PreMiniature2{
-    width: 330px;
+    width: 100%;
     height: 190px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
@@ -360,13 +363,13 @@ a{
 
 .PreMiniature2 img{
     border-radius: 20px 20px 0 0;
-    width: 330px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
 .PreMiniature3{
-    width: 330px;
+    width: 100%;
     height: 140px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
@@ -374,13 +377,13 @@ a{
 
 .PreMiniature3 img{
     border-radius: 20px 20px 0 0;
-    width: 330px;
+    width: 100%;
     height: 100px;
     object-fit: cover;
 }
 
 .PreMiniature4{
-    width: 330px;
+    width: 100%;
     height: 170px;
     box-shadow: 0px 0px 10px #cecece;
     border-radius: 20px 20px 10px 10px;
@@ -388,7 +391,7 @@ a{
 
 .PreMiniature4 img{
     border-radius: 20px 20px 0 0;
-    width: 330px;
+    width: 100%;
     height: 130px;
     object-fit: cover;
 }
@@ -429,16 +432,40 @@ footer a:hover{
 }
 
 
+@media all and (max-width: 1421px)
+{
+
+    .intro{
+        margin-left: 15px;
+    }
+
+    .search{
+        margin-left: 15px;
+    }
+
+    .filters{
+        margin-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info{
+        margin-left: 15px;
+    }
+
+
+    .activities{
+        margin: 0 25px;
+    }
+}
+
 @media all and (max-width: 1024px)
 {
-    .BlockPage{
-        width: 100%;
-        margin: auto;
-    }
 
     header{
         display: flex;
         flex-direction: column;
+        margin-left: 15px;
     }
 
     nav li a{
@@ -454,6 +481,11 @@ footer a:hover{
         border-bottom: 4px solid #F2F2F2;
     }
 
+    .menu{
+        margin-left: -40px;
+        width: 100%;
+    }
+    
     .navigation:hover{
         border-bottom: 4px solid #0065fc;
         border-top: none;
@@ -466,7 +498,7 @@ footer a:hover{
     }
 }
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 1053px)
 {
     .filters{
         display: flex;
@@ -477,6 +509,7 @@ footer a:hover{
         flex-wrap: wrap;
         margin-left: -45px;
     }
+
 }
 
 @media all and (max-width: 1295px)
@@ -539,6 +572,12 @@ footer a:hover{
     .content a:hover{
         transform: scale(1.02);
     }
+
+    .BlockPage{
+        width: 100%;
+        max-width: 1295px;
+        margin: auto;
+    }
 }
 
 @media all and (max-width: 1060px)
@@ -563,10 +602,12 @@ footer a:hover{
 
     .miniature{
         width: 100%;
+        height: 230px;
     }
 
     .image{
         width: 100%;
+        height: 150px
     }
 
     .popular{
@@ -579,10 +620,6 @@ footer a:hover{
         justify-content: space-between;
     }
 
-    .title{
-        width: 90%;
-    }
-
     .PopMiniature{
         width: 100%;
     }
@@ -590,10 +627,6 @@ footer a:hover{
 
 @media all and (max-width: 1245px)
 {
-
-    .activities{
-        margin: 0 25px;
-    }
     
     .preview{
         display: flex;
