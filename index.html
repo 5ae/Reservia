@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f616b5827f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo/Reservia.png" />
     <title>Reservia</title>
 </head>
@@ -39,7 +40,10 @@
             <div class="search">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" name="city/country" placeholder="Marseille, France" />
-                <a href="index.html">Rechercher</a>
+                <a href="index.html">
+                    <span class="HideText">Rechercher</span>
+                    <i id="SearchIcon" class="fas fa-search"></i>
+                </a>
             </div>
 
             <section class="filters">

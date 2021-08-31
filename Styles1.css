@@ -30,7 +30,6 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    flex-wrap: wrap;
 }
 
 nav a {
@@ -93,6 +92,10 @@ input {
     font-weight: bold;
     padding: 15px;
     border-radius: 0 10px 10px 0;
+}
+
+#SearchIcon {
+    display: none;
 }
 
 .filters {
@@ -243,7 +246,7 @@ input {
 .popular {
     background: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 40px;
+    padding: 20px 30px;
     width: 45%;
     height: 600px;
 }
@@ -266,7 +269,7 @@ input {
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
-    width: 100%;
+    width: 97%;
     height: 135px;
     line-height: 1em;
     margin-bottom: 30px;
@@ -309,8 +312,9 @@ input {
     transform: scale(1.05);
 }
 
+/* Activité */
+
 .activities h2 {
-    /* Activité */
     margin-top: 60px;
 }
 
@@ -332,7 +336,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
 }
 
 .PreMiniature1 {
@@ -479,64 +483,143 @@ footer a:hover {
     .popular {
         height: 100%;
     }
-    .PopImage {
-        min-width: 200px;
-    }
-    .PopImage img {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 1030px) {
-    .preview p{
+    .preview p {
         font-size: 0.8em;
         padding: 6px;
     }
-
-    .TagElement{
+    .TagElement {
         margin-bottom: 10px;
     }
 }
 
-@media all and (max-width: 414px) {
-    .Marseille{
+@media all and (max-width: 890px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .preview {
+        display: flex;
+        flex-direction: column;
+    }
+    .BlockMiniature {
+        width: 100%;
+    }
+    .PreMiniature1 {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 30px;
+    }
+    .PreMiniature1 img {
+        width: 100%;
+        height: 200px;
+    }
+    .PreMiniature2 {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 30px;
+    }
+    .PreMiniature2 img {
+        width: 100%;
+        height: 200px;
+    }
+    .PreMiniature3 {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 30px;
+    }
+    .PreMiniature3 img {
+        width: 100%;
+        height: 200px;
+    }
+    .PreMiniature4 {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 30px;
+    }
+    .PreMiniature4 img {
+        width: 100%;
+        height: 200px;
+    }
+    .preview a:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media all and (max-width: 728px) {
+    .Marseille {
         padding: 0;
         background-color: white;
     }
-
-    #AnchorAccomodation{
-        width: 100%;
-        margin-left: 30px;
-    }
-
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0 30px;
     }
-
-    .miniature{
-        width: 100%;
+    .miniature {
+        width: 98%;
         height: 230px;
     }
-
-    .image{
+    .image {
         width: 100%;
         height: 150px
     }
-
-    .popular{
-        height: 100%;
+    .popular {
+        border-radius: 0;
     }
+}
 
-    .best{
-        display: flex;
+@media all and (max-width: 656px) {
+    header {
         flex-direction: column;
-        justify-content: space-between;
+        height: 100px;
     }
-
-    .PopMiniature{
+    .logo {
+        position: absolute;
+        left: 20px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
         width: 100%;
+        padding: 0px;
+    }
+    .navigation {
+        border-bottom: 4px solid #F2F2F2;
+        ;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .navigation:hover {
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+    }
+    .SignIn {
+        position: absolute;
+        right: 20px;
+        top: 42px;
+    }
+    body {
+        width: 100%;
+        font-size: 1em;
+    }
+    .HideText {
+        display: none;
+    }
+    #SearchIcon {
+        display: initial;
+        background-color: #0065fc;
+        color: white;
+        margin-left: -15px;
+        border-radius: 0 10px 10px 0;
+    }
+    .search a {
+        background-color: white;
     }
 }
