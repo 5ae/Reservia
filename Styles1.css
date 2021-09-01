@@ -569,6 +569,9 @@ footer a:hover {
         width: 100%;
         height: 150px
     }
+    .popular {
+        border-radius: 0;
+    }
 }
 
 @media all and (max-width: 656px) {
@@ -617,33 +620,30 @@ footer a:hover {
     .search a {
         background-color: white;
     }
-    .intro {
+    .intro{
         margin: 0 15px;
     }
-    .search {
+    .search{
         margin: 0 15px;
     }
-    .filters {
+    .filters{
         margin: 0 15px;
     }
-    .info {
+    .info{
         margin: 0 15px;
     }
-    .Marseille {
+    .Marseille{
         margin: 0 15px;
     }
-    .activities {
+    .activities{
         margin: 0 15px;
     }
-    .popular {
-        border-radius: 0;
-    }
-    .best {
+    .best{
         margin: 0;
-        width: 90%;
+        width: 95%;
     }
-    .PopMiniature {
-        width: 100%;
-        margin-left: 4%;
+    .PopMiniature{
+        width: 94%;
+        margin-left: 15px;
     }
-}
+}  
