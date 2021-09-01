@@ -559,10 +559,10 @@ footer a:hover {
     .content {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 98%;
     }
     .miniature {
-        width: 98%;
+        width: 100%;
         height: 230px;
     }
     .image {
@@ -575,6 +575,10 @@ footer a:hover {
 }
 
 @media all and (max-width: 656px) {
+    .BlockPage {
+        width: 100%;
+        margin: 0;
+    }
     header {
         flex-direction: column;
         height: 100px;
@@ -592,8 +596,6 @@ footer a:hover {
     }
     .navigation {
         border-bottom: 4px solid #F2F2F2;
-        ;
-        width: 50%;
         padding-bottom: 10px;
     }
     .navigation:hover {
@@ -604,10 +606,6 @@ footer a:hover {
         position: absolute;
         right: 20px;
         top: 42px;
-    }
-    body {
-        width: 100%;
-        font-size: 1em;
     }
     .HideText {
         display: none;
@@ -621,5 +619,30 @@ footer a:hover {
     }
     .search a {
         background-color: white;
+    }
+    .intro{
+        margin: 0 15px;
+    }
+    .search{
+        margin: 0 15px;
+    }
+    .filters{
+        margin: 0 15px;
+    }
+    .info{
+        margin: 0 15px;
+    }
+    .Marseille{
+        margin: 0 15px;
+    }
+    .activities{
+        margin: 0 15px;
+    }
+    .best{
+        margin: 0;
+        width: 95%;
+    }
+    .PopMiniature{
+        margin-left:15px;
     }
 }
