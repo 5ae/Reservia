@@ -88,7 +88,6 @@ input {
 .search a {
     background-color: #0065fc;
     color: white;
-    text-decoration: none;
     font-weight: bold;
     padding: 15px;
     border-radius: 0 10px 10px 0;
@@ -405,6 +404,8 @@ input {
     transform: scale(1.05);
 }
 
+/* FOOTER */
+
 footer {
     background-color: #F2F2F2;
     padding-top: 30px;
@@ -431,6 +432,8 @@ footer a:hover {
     gap: 20%;
     margin-left: 3%;
 }
+
+/* MEDIA QUERIES */
 
 @media all and (max-width: 1340px) {
     .accomodation {
