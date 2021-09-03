@@ -232,6 +232,10 @@ input {
     flex-wrap: wrap;
 }
 
+.MoreContent{
+    margin-left: 5px;
+}
+
 .content a {
     margin-bottom: 40px;
 }
